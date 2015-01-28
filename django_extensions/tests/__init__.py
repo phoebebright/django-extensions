@@ -7,7 +7,7 @@ from django_extensions.tests.uuid_field import (UUIDFieldTest,
 from django_extensions.tests.shortuuid_field import ShortUUIDFieldTest
 from django_extensions.tests.fields import AutoSlugFieldTest
 from django_extensions.tests.management_command import CommandTest, \
-    ShowTemplateTagsTests, UpdatePermissionsTests, CommandSignalTests
+    ShowTemplateTagsTests, UpdatePermissionsTests, CommandSignalTests, CommandShowUrlsRuns
 from django_extensions.tests.test_templatetags import TemplateTagsTests
 from django_extensions.tests.test_clean_pyc import CleanPycTests
 from django_extensions.tests.test_compile_pyc import CompilePycTests
@@ -16,7 +16,7 @@ __test_classes__ = [
     DumpScriptTests, JsonFieldTest, UUIDFieldTest, AutoSlugFieldTest,
     CommandTest, ShowTemplateTagsTests, TruncateLetterTests, TemplateTagsTests,
     ShortUUIDFieldTest, PostgreSQLUUIDFieldTest, CleanPycTests, CompilePycTests,
-    UpdatePermissionsTests, CommandSignalTests
+    UpdatePermissionsTests, CommandSignalTests, CommandShowUrlsRuns
 ]
 
 try:

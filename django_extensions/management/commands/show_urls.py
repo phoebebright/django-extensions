@@ -83,7 +83,8 @@ class Command(BaseCommand):
 
         style = color_style()
 
-        if settings.ADMIN_FOR:
+        # ADMIN_FOR not available after Django 1.7
+        if hasattr(settings,'ADMIN_FOR') and settings.ADMIN_FOR:
             settings_modules = [__import__(m, {}, {}, ['']) for m in settings.ADMIN_FOR]
         else:
             settings_modules = [settings]
